@@ -27,6 +27,9 @@ public static class DependencyInjection
         services.AddDbContext<SupportCrmDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("Default")));
 
+        // --- HTTP clients (required by WebhookService and its consumers) ---------------
+        services.AddHttpClient();
+
         // --- Repositories (Domain.Repositories -> Infrastructure.Persistence) ----------
         services.AddScoped<IAgentNotificationRepository, AgentNotificationRepository>();
         services.AddScoped<IAgentRepository, AgentRepository>();
