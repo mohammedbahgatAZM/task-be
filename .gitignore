@@ -7,7 +7,7 @@
 *.user
 
 # Runtime-generated attachments
-SupportCrm.Api/App_Data/**
+src/SupportCrm.Api/App_Data/**
 
 # Managed by squad-kit — do not edit this block
 .squad/secrets.yaml
