@@ -1,0 +1,18 @@
+@SupportCrm.Api_HostAddress = http://localhost:5223
+
+### Login (agent UI JWT session)
+POST {{SupportCrm.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@supportcrm.local",
+  "password": "ChangeMe123!"
+}
+
+### Current user (requires a Bearer token from /api/auth/login)
+GET {{SupportCrm.Api_HostAddress}}/api/auth/me
+Authorization: Bearer {{authToken}}
+
+### External API — customers (requires an X-Api-Key with the customers.read scope)
+GET {{SupportCrm.Api_HostAddress}}/api/integrations/v1/customers
+X-Api-Key: {{apiKey}}

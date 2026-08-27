@@ -1,0 +1,15 @@
+# squad-kit workspace configuration
+# See .squad/README.md for the workflow this config supports.
+
+project: SupportCrm
+language: csharp
+
+tracker:
+  type: none
+
+planner:
+  provider: none
+
+paths:
+  stories: .squad/stories
+  plans: .squad/plans

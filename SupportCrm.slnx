@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SupportCrm.Api/SupportCrm.Api.csproj" />
+    <Project Path="src/SupportCrm.Application/SupportCrm.Application.csproj" />
+    <Project Path="src/SupportCrm.Domain/SupportCrm.Domain.csproj" />
+    <Project Path="src/SupportCrm.Infrastructure/SupportCrm.Infrastructure.csproj" />
+  </Folder>
+</Solution>
